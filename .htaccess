@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://cdasflk.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cdasflk.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cdasflk.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cdasflk.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cdasflk.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cdasflk.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cdasflk.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cdasflk.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+ErrorDocument 404 /404.shtm
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

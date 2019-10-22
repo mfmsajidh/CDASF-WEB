@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDASF | Contact Us</title>
+<link rel="shortcut icon" href="Images/Favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+@import url("style.css");
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 align="center"><a href="index.html"><img src="Images/Logo.png" alt="CDASF" width="80px" height="85px" align="absmiddle"></a> Colombo District Ahadhiyyah Schools Federation</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <a href="index.html"><li><i class="fa fa-home"></i> Home</li></a>
+    <a href="News & Events.html"><li><i class="fa fa-newspaper-o"></i> News &amp; Events</li></a>
+    <a href="Annual Activities.html"><li><i class="#"></i> Annual Activities</li></a>
+    <a href="On Our Blog.html"><li><i class="#"></i> Our Blog</li></a>
+    <a href="Contributions.html"><li><i class="fa fa-paper-plane"></i> Contributions</li></a>
+    <a href="Downloads.html"><li><i class="fa fa-cloud-download"></i> Downloads</li></a>
+    <a href="Contact Us.html"><li><i class="fa fa-users"></i> Contact Us</li></a>
+  </ul>
+</div>
+
+<div class="col-6 col-m-9">
+  <h2>Contact Us</h2>
+  <hr>
+  <h3>Our Office</h3>
+  <p align="justify"><i class="fa fa-street-view"></i> No. 94 1/1, Meeraniya Street, Colombo 12, Sri Lanka</p>
+  
+  <div id="map"></div>
+   <script>
+      function initMap() {
+        var uluru = {lat:6.937203, lng:79.862771};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          animation:google.maps.Animation.BOUNCE,
+		  map: map
+        });
+		var infowindow = new google.maps.InfoWindow({
+  content:"We are Here!"
+  });
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZv_Ne0yKSRF03XpPmkHtDHa9U73vTRZs&callback=initMap">
+    </script>
+  
+  <br>
+  <h3>Our Officials</h3>
+  <ul>
+  <li><h4>The President</h4>
+  <p><i class="fa fa-user"></i> Al - Haj M. R. M Zarook
+  <br><i class="fa fa-volume-control-phone"></i> +94-77-758-5658
+  <br><i class="fa fa-envelope" style="color:blue"></i> <a href="mailto:president@cdasflk.com?Subject=Website%20Inquiry" target="_top">president@cdasflk.com</a></p></li>
+  
+  <li><h4>The Vice President</h4>
+  <p><i class="fa fa-user"></i> Al - Haj M. Ashroff Rumi
+  <br><i class="fa fa-volume-control-phone"></i> +94-77-757-3953
+  <br><i class="fa fa-envelope" style="color:blue"></i> <a href="mailto:vicepresident@cdasflk.com?Subject=Website%20Inquiry" target="_top">vicepresident@cdasflk.com</a></p></li>
+    
+  <li><h4>The Secretary</h4>
+  <p><i class="fa fa-user"></i> Al - Haj M. F. M Fahim
+  <br><i class="fa fa-volume-control-phone"></i> +94-77-484-0001
+  <br><i class="fa fa-envelope" style="color:blue"></i> <a href="mailto:secretary@cdasflk.com?Subject=Website%20Inquiry" target="_top">secretary@cdasflk.com</a></p></li>
+  
+  <li><h4>The Asst. Secretary</h4>
+  <p><i class="fa fa-user"></i> M. Saajid Shibly
+  <br><i class="fa fa-volume-control-phone"></i> +94-77-133-4220
+  <br><i class="fa fa-envelope" style="color:blue"></i> <a href="mailto:msmsaajid@cdasflk.com?Subject=Website%20Inquiry" target="_top">msmsaajid@cdasflk.com</a></p></li>
+  
+  <li><h4>The Treasurer</h4>
+  <p><i class="fa fa-user"></i> Al - Haj M. A. M Rizwan
+  <br><i class="fa fa-volume-control-phone"></i> +94-77-771-7255
+  <br><i class="fa fa-envelope" style="color:blue"></i> <a href="mailto:treasurer@cdasflk.com?Subject=Website%20Inquiry" target="_top">treasurer@cdasflk.com</a></p></li>
+  
+  <li><h4>The Asst. Treasurer</h4>
+  <p><i class="fa fa-user"></i> Mr. F. A. M Fiyaz
+  <br><i class="fa fa-volume-control-phone"></i> +94-77-908-1815
+  <br><i class="fa fa-envelope" style="color:blue"></i> <a href="mailto:asst.treasurer@cdasflk.com?Subject=Website%20Inquiry" target="_top">asst.treasurer@cdasflk.com</a></p></li>
+  
+  </ul>
+  
+  <br>
+  <h2>WE VALUE YOUR FEEDBACKS</h2>
+  <hr>
+  <h4 align="justify">You can help us to improve our website. We will work together to make Colombo District Ahadhiyyah Schools Federation the BEST OF ALL. 
+  <br>Write to us to provide feedback about this website and help us improve !!!</h4>
+  <a href="mailto:mfmsajidh@cdasflk.com?Subject=Website%20Inquiry" target="_top"><button class="button" style="vertical-align:middle"><span>Comment </span></button></a>
+</div>
+
+<div class="col-3 col-m-12">
+  <div class="aside">
+    <h2>Who are we?</h2>
+    <p>A District Organization overseeing the Administration of All Ahadhiyyah Schools in the District of Colombo</p>
+    <br>
+    <h2>Reach us at</h2>
+    <p><i class="fa fa-map-marker"></i> No. 94 1/1, Meeraniya Street, Colombo 12, Sri Lanka</p>
+    <br>
+    <h2>Contact Us Through</h2>
+    <p><i class="fa fa-laptop"></i> <a href="mailto:secretary@cdasflk.com?Subject=Website%20Inquiry" target="_top">secretary@cdasflk.com</a></p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p align="center">Colombo District Ahadhiyya Schools Federation, Sri Lanka. Inquiries: 
+  <a class="footerlink" href="mailto:mfmsajidh@cdasflk.com?Subject=Website%20Inquiry" target="_top">mfmsajidh@cdasflk.com</a>. 
+  <a class="footerlink" href="Disclaimer & Copyright notice.html">Disclaimer & Copyright Notice</a>. Concept, Design &amp; Coding by 
+  <a class="footerlink" href="http:\\www.fb.com/mfmsajidh" target="_blank">Sajidh Farook</a></p>
+</div>
+
+</body>
+</html>
